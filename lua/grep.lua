@@ -3,7 +3,7 @@ local builtin = require('telescope.builtin')
 vim.keymap.set(
   'n',
   '<leader>ff',
-  ':lua require"telescope.builtin".find_files({hidden=true})<CR>',
+  ':lua require"telescope.builtin".find_files({hidden=true})<cr>',
   {}
 )
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })

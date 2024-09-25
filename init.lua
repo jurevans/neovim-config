@@ -1,5 +1,6 @@
 require('buffer')
 require('code-completion')
+require('comments')
 require('custom-keys')
 require('file-explorer')
 require('grep')
