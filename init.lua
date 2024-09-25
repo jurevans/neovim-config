@@ -1,11 +1,13 @@
+-- Load options, then key mappings
+require('options')
+require('custom-keys')
+
+-- Load lua
 require('buffer')
 require('code-completion')
 require('comments')
-require('custom-keys')
 require('file-explorer')
-require('grep')
 require('mason-config')
-require('options')
 require('plugins')
 require('styling')
 require('syntax-highlighting')

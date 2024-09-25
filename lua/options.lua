@@ -23,7 +23,6 @@ local options = {
     loaded_netrwPlugin = 1,
     -- for buffer
     termguicolors = true
-
   }
 }
 
