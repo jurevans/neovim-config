@@ -13,7 +13,8 @@ My goal is that this is a simple, yet functional, IDE for the following:
 
 ## Usage
 
-Installation:
+### Installation
+
 
 ```bash
 # Set up Packer
@@ -34,4 +35,17 @@ Then, inside `nvim`:
 
 ```
 :PackerInstall
+
+:MasonUpdate
+```
+
+Once this completes, restart `nvim`!
+
+
+### Post-installation
+
+Run the following to ensure you have all required dependencies:
+
+```
+:checkhealth
 ```
