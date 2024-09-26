@@ -114,10 +114,15 @@ _G.packer_plugins = {
     path = "/home/modus/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
-  ["cyberdream.nvim"] = {
+  ["conform.nvim"] = {
     loaded = true,
-    path = "/home/modus/.local/share/nvim/site/pack/packer/start/cyberdream.nvim",
-    url = "https://github.com/scottmckendry/cyberdream.nvim"
+    path = "/home/modus/.local/share/nvim/site/pack/packer/start/conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
+  },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/home/modus/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,

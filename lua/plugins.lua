@@ -22,8 +22,11 @@ return require('packer').startup(function(use)
     },
   }
 
-  -- Cyberdream theme for styling
-  use { 'scottmckendry/cyberdream.nvim' }
+  -- Color Scheme
+  -- use { 'scottmckendry/cyberdream.nvim' }
+  -- use { "folke/tokyonight.nvim" }
+  -- use { "catppuccin/nvim", as = "catppuccin" }
+  use { "rebelot/kanagawa.nvim" }
 
   -- Treesitter
   use {
@@ -57,4 +60,7 @@ return require('packer').startup(function(use)
 
   -- Commenting
   use {'numToStr/Comment.nvim'}
+
+  -- Null-LS - Format on save
+  use { "stevearc/conform.nvim"  }
 end)
