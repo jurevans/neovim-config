@@ -2,10 +2,9 @@
 local map = vim.keymap.set
 local telescope = require('telescope.builtin')
 
-map('n', '<Esc>', [[:noh<cr>]], {})
+map("n", " ", "<Nop>", { silent = true, remap = false })
 
--- map the key ctrl-n to run the command :NvimTreeToggle
-map('n', '<C-n>', [[:NvimTreeToggle<cr>]], {})
+map('n', '<Esc>', [[:noh<cr>]], {})
 
 -- map keys to navigate buffers in view
 map('n', '<C-h>', '<C-w>h', {}) -- LEFT
@@ -54,17 +53,15 @@ map(
   function()
     require("Comment.api").toggle.linewise.count(vim.v.count > 0 and vim.v.count or 1)
   end,
-  { desc = 'Toggle comment block' }
+  { desc = 'Toggle comment' }
 )
 
 -- map toggle comment in visual mode
 map(
   'v',
   '<leader>/',
-  function()
-    require('Comment.api').toggle.linewise(vim.fn.visualmode())
-  end,
-  { desc = 'Toggle comment line' }
+  "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>",
+  { desc = 'Toggle comment' }
 )
 
 -- search files, even hidden ones
@@ -79,4 +76,4 @@ map('n', '<leader>fg', telescope.live_grep, { desc = 'Telescope live grep' })
 map('n', '<leader>fb', telescope.buffers, { desc = 'Telescope buffers' })
 
 -- Alternate mapping for NvimTreeToggle
-map('n', '<leader>n', [[:NvimTreeToggle<cr>]], {})
+map('n', '<leader>e', [[:NvimTreeToggle<cr>]], {})

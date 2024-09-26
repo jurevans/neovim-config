@@ -17,7 +17,7 @@ local options = {
   },
   g = {
     -- update leader key to ,
-    mapleader = ",",
+    mapleader = " ",
     -- disable netrw at the very start of your init.lua (strongly advised)
     loaded_netrw = 1,
     loaded_netrwPlugin = 1,
