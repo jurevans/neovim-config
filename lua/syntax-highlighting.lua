@@ -8,6 +8,7 @@ require'nvim-treesitter.configs'.setup {
     "lua",
     "rust",
     "markdown",
+    "toml",
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
@@ -20,5 +21,13 @@ require'nvim-treesitter.configs'.setup {
   highlight = {
     -- `false` will disable the whole extension
     enable = true,
+    additional_vim_regex_highlighting = false,
   },
+
+  ident = { enable = true },
+  rainbow = {
+    enable = true,
+    extended_mode = true,
+    max_file_lines = nil,
+  }
 }

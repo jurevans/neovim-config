@@ -10,11 +10,9 @@ My goal is that this is a simple, yet functional, IDE for the following:
 - React
 - Bash
 
-
 ## Usage
 
 ### Installation
-
 
 ```bash
 # Set up Packer
@@ -24,7 +22,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 # Clone this repo
-
 git clone git@github.com:jurevans/neovim-config.git ~/.config/nvim
 
 # Launch neovim
@@ -40,7 +37,6 @@ Then, inside `nvim`:
 ```
 
 Once this completes, restart `nvim`!
-
 
 ### Post-installation
 

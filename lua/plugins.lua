@@ -3,6 +3,7 @@ return require('packer').startup(function(use)
   use 'williamboman/mason.nvim'   
   use 'williamboman/mason-lspconfig.nvim'
   use 'neovim/nvim-lspconfig'
+  use 'simrat39/rust-tools.nvim'
 
   -- Hrsh7th Code Completion Suite
   use 'hrsh7th/nvim-cmp' 

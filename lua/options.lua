@@ -13,7 +13,8 @@ local options = {
     completeopt = {'menuone', 'noselect', 'noinsert', 'preview'},
     -- shortmess is used to avoid excessive messages
     shortmess = vim.opt.shortmess + { c = true},
-
+    -- disable folds by default
+    foldenable = false,
   },
   g = {
     -- update leader key to ,
@@ -23,6 +24,11 @@ local options = {
     loaded_netrwPlugin = 1,
     -- for buffer
     termguicolors = true
+  },
+  wo = {
+    -- set fold options
+    foldmethod = 'expr',
+    foldexpr = 'nvim_treesitter#foldexpr()'
   }
 }
 

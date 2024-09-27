@@ -77,3 +77,12 @@ map('n', '<leader>fb', telescope.buffers, { desc = 'Telescope buffers' })
 
 -- Alternate mapping for NvimTreeToggle
 map('n', '<leader>e', [[:NvimTreeToggle<cr>]], {})
+
+-- TODO: Should any of these be remapped?
+-- zo - open fold
+-- zO - open folds under cursor recursively
+-- zR - open all folds recursively
+-- zc - close fold under cursor
+-- zC - close all folds under cursor recursively
+-- za - toggle fold under cursor
+-- zA - toggle fold under cursor recursively
