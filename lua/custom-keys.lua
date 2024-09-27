@@ -86,3 +86,9 @@ map('n', '<leader>e', [[:NvimTreeToggle<cr>]], {})
 -- zC - close all folds under cursor recursively
 -- za - toggle fold under cursor
 -- zA - toggle fold under cursor recursively
+
+-- tree-sitter LSP diagnostics
+map('n', '<leader>ld', vim.diagnostic.open_float)
+map('n', '<leader>lp', vim.diagnostic.goto_prev)
+map('n', '<leader>ln', vim.diagnostic.goto_next)
+map('n', '<leader>ll', "<cmd>Telescope diagnostics<cr>")
