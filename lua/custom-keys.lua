@@ -5,6 +5,8 @@ local telescope = require('telescope.builtin')
 map("n", " ", "<Nop>", { silent = true, remap = false })
 
 map('n', '<Esc>', [[:noh<cr>]], {})
+map('n', 'y', '"+y', {})
+map('n', 'p', '"+p', {})
 
 -- map keys to navigate buffers in view
 map('n', '<C-h>', '<C-w>h', {}) -- LEFT

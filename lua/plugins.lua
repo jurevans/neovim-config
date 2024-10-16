@@ -6,7 +6,15 @@ return require('packer').startup(function(use)
   use 'simrat39/rust-tools.nvim'
 
   -- Hrsh7th Code Completion Suite
-  use 'hrsh7th/nvim-cmp' 
+  use {
+    'hrsh7th/nvim-cmp',
+    dependencies = {
+      'saadparwaiz1/cmp_luasnip',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
+      'hrsh7th/cmp-nvim-lsp'
+    }
+  }
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-nvim-lua'
   use 'hrsh7th/cmp-nvim-lsp-signature-help'
@@ -58,10 +66,23 @@ return require('packer').startup(function(use)
   -- Buffer line
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
-
   -- Commenting
   use {'numToStr/Comment.nvim'}
 
   -- Null-LS - Format on save
   use { "stevearc/conform.nvim"  }
+
+  -- luasnip
+  use {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "rafamadriz/friendly-snippets"
+    },
+    config = require "luasnip-config"
+  }
+
+  -- Rust
+  use {
+    "mrcjkb/rustaceanvim"
+  }
 end)

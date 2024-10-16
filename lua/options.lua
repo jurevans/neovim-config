@@ -1,6 +1,9 @@
 -- define vim options
+
 local options = {
   opt = {
+    -- clipboard
+    clipboard = 'unnamedplus',
     -- tab settings
     tabstop = 2,
     shiftwidth = 2,
